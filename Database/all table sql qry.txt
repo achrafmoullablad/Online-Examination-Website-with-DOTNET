@@ -1,0 +1,65 @@
+create  table Registration
+{
+id 	int identity(1,1),
+Name	varchar(50),
+Email	varchar(50),
+Mobile	varchar(50),
+Password		varchar(50),
+Role	varchar(50),
+
+}
+
+
+Create table Answer
+(
+Id int not null primary key identity(1,1),
+Que_ID		varchar(500),
+Que		varchar(500),
+Opt_Selected	varchar(500),
+Ans		varchar(500),
+)
+
+
+create table Que_temp
+(
+
+Id int not null primary key identity,
+Que_Id	varchar(500),
+)
+
+
+
+create table C
+(
+Id int not null primary key identity,
+Question		varchar(500),
+Option1		varchar(500),
+Option2		varchar(500),
+Option3		varchar(500),
+Option4		varchar(500),
+Answer		varchar(500),
+)
+
+
+
+create table C_sharp
+(
+Id int not null primary key identity,
+Question		varchar(500),
+Option1		varchar(500),
+Option2		varchar(500),
+Option3		varchar(500),
+Option4		varchar(500),
+Answer		varchar(500),
+)
+
+create table Java
+(
+Id int not null primary key identity,
+Question		varchar(500),
+Option1		varchar(500),
+Option2		varchar(500),
+Option3		varchar(500),
+Option4		varchar(500),
+Answer		varchar(500),
+)
